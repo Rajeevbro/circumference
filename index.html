@@ -1,1 +1,84 @@
 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link href="maitre.css" rel="stylesheet" type="text/css">
+    <title>
+        Circumference Calculator
+
+
+    </title>
+
+
+
+    <div style="text-align:center;">
+        <hr width="600px">
+        <h1>Circumference calculator</h1>
+        <hr width="600px">
+    </div>
+
+</head>
+
+<body>
+  
+   <center>
+    <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+        <label for="Total :">Radius </label>&emsp;
+        <input class="form-control" type="text" id="num1" style="width: 450px">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    </div>
+
+  
+
+
+    <br>
+    <br>
+    <br>
+ 
+    <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+
+        <label for="Rate">Circumference: &emsp;</label>
+       <spawn><h5 id="grandtotal"></h5></spawn> 
+
+    </div>
+</center>
+
+
+    <center><button class="btn btn-dark" onclick="Calculation()">Calculate</button></center>
+
+    <script>
+        function Calculation() {
+            var totalamount = document.getElementById("num1").value;
+            
+            
+            var grandtotal = parseFloat(totalamount)*(2*Math.PI)
+            if (!isNaN(grandtotal)) {
+                document.getElementById("grandtotal").innerHTML = grandtotal;
+                
+            }
+
+
+        }
+
+    </script>
+
+<hr width="600px">
+   <center class="blockquote-footer"> Developed by @ Rajeev Chapagain</centerclass="blockquote-footer">
+</body>
+
+
+</html>
+
+
